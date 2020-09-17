@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E16F5F11-72DC-47BF-82A3-6B9A16951549"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4670A7CC-7CEE-4CD8-93E7-E3F095FE8469"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChatAppWithFirebase/Views/ChatInputAccessoryView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "init(frame:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4670A7CC-7CEE-4CD8-93E7-E3F095FE8469 - b2be68869eab280f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ChatAppWithFirebase.ChatInputAccessoryView.__allocating_init(frame: __C.CGRect) -&gt; ChatAppWithFirebase.ChatInputAccessoryView"
+                  moduleName = "ChatAppWithFirebase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/takawano/ChatAppWithFirebase/ChatAppWithFirebase/ChatAppWithFirebase/Views/ChatInputAccessoryView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "4670A7CC-7CEE-4CD8-93E7-E3F095FE8469 - e619522b5174ed1a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ChatAppWithFirebase.ChatInputAccessoryView.init(frame: __C.CGRect) -&gt; ChatAppWithFirebase.ChatInputAccessoryView"
+                  moduleName = "ChatAppWithFirebase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/takawano/ChatAppWithFirebase/ChatAppWithFirebase/ChatAppWithFirebase/Views/ChatInputAccessoryView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "144">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7D86AE69-AE15-4F06-8A7E-F570B5E07CD0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChatAppWithFirebase/Views/ChatInputAccessoryView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "init(frame:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "366102FA-67B1-4D25-A44B-2B418F26DCB0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChatAppWithFirebase/Views/ChatInputAccessoryView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "nibInit()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
