@@ -13,7 +13,7 @@ class ChatRoomViewController: UIViewController {
     private let cellID = "cellId"
     
     private var chatInputAccesoryView: ChatInputAccessoryView = {
-        let view = ChatInputAccessoryView()
+        let view = ChatInputAccessoryView.nibInit()
         view.frame = .init(x: 0, y: 0, width: view.frame.width, height: 100)
         return view
     }()
