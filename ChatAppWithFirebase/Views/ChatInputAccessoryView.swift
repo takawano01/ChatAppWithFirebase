@@ -8,14 +8,21 @@
 
 import UIKit
 
+protocol ChatInputAccessoryViewDelegate: class {
+    func tappedSendButton(text: String)
+}
+
 class ChatInputAccessoryView: UIView {
     
     @IBOutlet weak var chatTextView: UITextView!
     @IBOutlet weak var sendButton: UIButton!
     
     @IBAction func tappedSendButton(_ sender: Any) {
-        print("tapped SendButton")
+        guard let text = chatTextView.text else { return }
+        delegate?.tappedSendButton(text: text)
     }
+    
+    weak var delegate:ChatInputAccessoryViewDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -38,6 +45,11 @@ class ChatInputAccessoryView: UIView {
         
     }
     
+    func removeText() {
+        chatTextView.text = ""
+        sendButton.isEnabled = true
+    }
+    
     override var intrinsicContentSize: CGSize {
         return .zero
     }
@@ -57,7 +69,6 @@ class ChatInputAccessoryView: UIView {
 extension ChatInputAccessoryView: UITextViewDelegate {
     
     func textViewDidChange(_ textView: UITextView) {
-//        print("textView.text: ", textView.text)
         if textView.text.isEmpty {
             sendButton.isEnabled = false
         } else {
