@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>255624077603-ggdag23v8l31vfvha2ast4r4m3eum472.apps.googleusercontent.com</string>
+	<string>826082263153-2pqj1t5jrhh07aeqt4pfaf409jemfrjk.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.255624077603-ggdag23v8l31vfvha2ast4r4m3eum472</string>
+	<string>com.googleusercontent.apps.826082263153-2pqj1t5jrhh07aeqt4pfaf409jemfrjk</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDgn4LccDkdlvipbbocV-6MfsrLfiLRDfE</string>
+	<string>AIzaSyBhxqWtEoYW77aYyJWKGwfWHLd4_v5EQr8</string>
 	<key>GCM_SENDER_ID</key>
-	<string>255624077603</string>
+	<string>826082263153</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.takawano.ChatAppWithFirebase</string>
 	<key>PROJECT_ID</key>
-	<string>chatwithfirebaseapp-444ba</string>
+	<string>chatappwithfirebase-b767d</string>
 	<key>STORAGE_BUCKET</key>
-	<string>chatwithfirebaseapp-444ba.appspot.com</string>
+	<string>chatappwithfirebase-b767d.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:255624077603:ios:85c368ccbbfc5dd967ec96</string>
+	<string>1:826082263153:ios:d5b8b37c9ddc5d4eb61bd0</string>
 	<key>DATABASE_URL</key>
-	<string>https://chatwithfirebaseapp-444ba.firebaseio.com</string>
+	<string>https://chatappwithfirebase-b767d.firebaseio.com</string>
 </dict>
 </plist>
