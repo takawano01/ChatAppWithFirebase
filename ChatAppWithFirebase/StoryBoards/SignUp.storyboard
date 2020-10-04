@@ -120,12 +120,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="alreadyHaveAccountButton" destination="nAs-0h-gQN" id="FdZ-sv-Uuj"/>
-                        <outlet property="emailTextField" destination="eAn-mc-Lr6" id="bGH-XN-dd2"/>
-                        <outlet property="passwordTextField" destination="RpU-9u-88B" id="H7j-Iv-tre"/>
-                        <outlet property="profileImageButton" destination="Kz0-2b-CYb" id="qWe-J0-tyH"/>
-                        <outlet property="registerButton" destination="nUN-or-4L3" id="McH-AT-kbD"/>
-                        <outlet property="usenameTextField" destination="GoQ-sY-v9X" id="wvU-ay-g3N"/>
+                        <outlet property="alreadyHaveAccountButton" destination="nAs-0h-gQN" id="1Zt-ld-PeT"/>
+                        <outlet property="emailTextField" destination="eAn-mc-Lr6" id="tJs-9z-YCl"/>
+                        <outlet property="passwordTextField" destination="RpU-9u-88B" id="3eq-We-LNX"/>
+                        <outlet property="profileImageButton" destination="Kz0-2b-CYb" id="RTc-0P-rxv"/>
+                        <outlet property="registerButton" destination="nUN-or-4L3" id="LJk-ZQ-sMO"/>
+                        <outlet property="usenameTextField" destination="GoQ-sY-v9X" id="ngc-Cg-iOJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ksl-jj-6ez" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

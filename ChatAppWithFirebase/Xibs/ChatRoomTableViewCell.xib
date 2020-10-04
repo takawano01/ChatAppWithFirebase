@@ -24,14 +24,14 @@
                             <constraint firstAttribute="width" constant="60" id="e4T-5m-dml"/>
                         </constraints>
                     </imageView>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" text="メッセージがここに入ります" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PB6-Bd-poh">
+                    <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" text="メッセージがここに入ります" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PB6-Bd-poh">
                         <rect key="frame" x="105" y="55" width="260" height="116"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="260" id="IgI-pV-g43"/>
                         </constraints>
                         <color key="textColor" systemColor="labelColor"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2YE-Ek-nnv">
@@ -40,24 +40,46 @@
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="ここにメッセージが入ります。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PbQ-lw-EhX">
+                        <rect key="frame" x="282" y="24" width="464" height="167"/>
+                        <color key="backgroundColor" red="0.60392156862745094" green="0.8784313725490196" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" systemColor="labelColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="12:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUY-69-8tT">
+                        <rect key="frame" x="206" y="138" width="50" height="33"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="glv-72-7gD" firstAttribute="leading" secondItem="q7T-ez-Urc" secondAttribute="leadingMargin" constant="15" id="0HG-13-lQx"/>
+                    <constraint firstItem="LUY-69-8tT" firstAttribute="bottom" secondItem="q7T-ez-Urc" secondAttribute="bottomMargin" constant="30" id="6IG-XK-s5F"/>
                     <constraint firstItem="glv-72-7gD" firstAttribute="centerY" secondItem="q7T-ez-Urc" secondAttribute="centerY" id="6ux-SL-VDE"/>
+                    <constraint firstAttribute="bottom" secondItem="PbQ-lw-EhX" secondAttribute="bottom" constant="25" id="BwD-PI-IQ6"/>
                     <constraint firstItem="PB6-Bd-poh" firstAttribute="leading" secondItem="glv-72-7gD" secondAttribute="trailing" constant="10" id="EJD-Kr-7bp"/>
                     <constraint firstAttribute="bottom" secondItem="PB6-Bd-poh" secondAttribute="bottom" constant="10" id="Xxf-Bo-uRw"/>
+                    <constraint firstItem="PbQ-lw-EhX" firstAttribute="top" secondItem="q7T-ez-Urc" secondAttribute="top" constant="24" id="dUy-ti-dVx"/>
+                    <constraint firstAttribute="trailing" secondItem="PbQ-lw-EhX" secondAttribute="trailing" constant="20" id="fis-Lp-oNE"/>
                     <constraint firstItem="2YE-Ek-nnv" firstAttribute="leading" secondItem="PB6-Bd-poh" secondAttribute="trailing" constant="25" id="gzx-zc-FMs"/>
+                    <constraint firstItem="PbQ-lw-EhX" firstAttribute="leading" secondItem="LUY-69-8tT" secondAttribute="trailing" constant="8" id="hBl-Gu-1rR"/>
                     <constraint firstItem="PB6-Bd-poh" firstAttribute="top" secondItem="q7T-ez-Urc" secondAttribute="top" constant="25" id="t0i-j5-KKG"/>
                     <constraint firstItem="PB6-Bd-poh" firstAttribute="bottomMargin" secondItem="2YE-Ek-nnv" secondAttribute="bottom" constant="20" id="tLM-rv-fwP"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
-                <outlet property="dateLabel" destination="2YE-Ek-nnv" id="vWk-GE-1Tu"/>
-                <outlet property="messageTextView" destination="PB6-Bd-poh" id="PZq-tr-XT7"/>
                 <outlet property="messageTextViewWidthConstraint" destination="IgI-pV-g43" id="3Ud-eE-hBe"/>
+                <outlet property="myDateLabel" destination="LUY-69-8tT" id="GyS-Ke-bzx"/>
+                <outlet property="myMessageTextView" destination="PbQ-lw-EhX" id="0Da-ln-CkD"/>
+                <outlet property="myMessageTextViewWidthConstraint" destination="PbQ-lw-EhX" id="XbZ-EH-CU8"/>
+                <outlet property="partnerDateLabel" destination="2YE-Ek-nnv" id="vWk-GE-1Tu"/>
+                <outlet property="partnerMessageTextView" destination="PB6-Bd-poh" id="PZq-tr-XT7"/>
                 <outlet property="userImageView" destination="glv-72-7gD" id="dCI-DM-8or"/>
             </connections>
-            <point key="canvasLocation" x="-259.4202898550725" y="155.35714285714286"/>
+            <point key="canvasLocation" x="-397" y="117"/>
         </tableViewCell>
     </objects>
     <resources>

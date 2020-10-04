@@ -33,7 +33,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SNu-dT-5wj">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="82" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SNu-dT-5wj">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -44,14 +44,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N1u-4d-V1i">
-                                                    <rect key="frame" x="30" y="11" width="50" height="48"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N1u-4d-V1i">
+                                                    <rect key="frame" x="10" y="7.5" width="65" height="65"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="50" id="c0O-0l-dnM"/>
+                                                        <constraint firstAttribute="height" constant="65" id="TJQ-0Q-xbx"/>
+                                                        <constraint firstAttribute="width" constant="65" id="c0O-0l-dnM"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="太郎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yW0-z7-88S">
-                                                    <rect key="frame" x="95" y="24.5" width="35" height="21"/>
+                                                    <rect key="frame" x="110" y="24.5" width="35" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -60,10 +61,8 @@
                                             <constraints>
                                                 <constraint firstItem="yW0-z7-88S" firstAttribute="leading" secondItem="N1u-4d-V1i" secondAttribute="trailing" constant="15" id="5ZN-AK-URE"/>
                                                 <constraint firstItem="yW0-z7-88S" firstAttribute="centerY" secondItem="Ya1-AB-64v" secondAttribute="centerY" id="6ll-Vv-8Vj"/>
-                                                <constraint firstItem="N1u-4d-V1i" firstAttribute="leading" secondItem="Ya1-AB-64v" secondAttribute="leadingMargin" multiplier="1:1" constant="10" id="F1Q-d9-ans"/>
-                                                <constraint firstItem="N1u-4d-V1i" firstAttribute="top" secondItem="Ya1-AB-64v" secondAttribute="topMargin" id="FBa-cJ-fgr"/>
+                                                <constraint firstItem="N1u-4d-V1i" firstAttribute="leading" secondItem="Ya1-AB-64v" secondAttribute="leadingMargin" constant="10" id="F1Q-d9-ans"/>
                                                 <constraint firstItem="N1u-4d-V1i" firstAttribute="centerY" secondItem="Ya1-AB-64v" secondAttribute="centerY" id="OdV-0y-Nvn"/>
-                                                <constraint firstItem="N1u-4d-V1i" firstAttribute="bottom" secondItem="Ya1-AB-64v" secondAttribute="bottomMargin" id="qe1-03-WmK"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -77,18 +76,27 @@
                         <viewLayoutGuide key="safeArea" id="US9-LJ-qq7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="SNu-dT-5wj" firstAttribute="leading" secondItem="US9-LJ-qq7" secondAttribute="leading" id="Ebp-vI-iQ3"/>
                             <constraint firstItem="SNu-dT-5wj" firstAttribute="bottom" secondItem="US9-LJ-qq7" secondAttribute="bottom" id="HNZ-7D-T3u"/>
-                            <constraint firstItem="SNu-dT-5wj" firstAttribute="top" secondItem="US9-LJ-qq7" secondAttribute="top" id="O5W-2d-uu1"/>
-                            <constraint firstItem="US9-LJ-qq7" firstAttribute="bottom" secondItem="SNu-dT-5wj" secondAttribute="bottom" id="Q5e-q5-eur"/>
                             <constraint firstItem="SNu-dT-5wj" firstAttribute="trailing" secondItem="US9-LJ-qq7" secondAttribute="trailing" id="XTy-iO-NGv"/>
-                            <constraint firstItem="US9-LJ-qq7" firstAttribute="trailing" secondItem="SNu-dT-5wj" secondAttribute="trailing" id="XpZ-Gc-Wjy"/>
                             <constraint firstItem="SNu-dT-5wj" firstAttribute="top" secondItem="US9-LJ-qq7" secondAttribute="top" id="ZdY-Vz-Qpd"/>
                             <constraint firstItem="SNu-dT-5wj" firstAttribute="leading" secondItem="US9-LJ-qq7" secondAttribute="leading" id="hpu-X9-0L9"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="OHY-az-zuR"/>
+                    <navigationItem key="navigationItem" id="OHY-az-zuR">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="sdD-r0-Xnk">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="cU8-zO-rZ3">
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.08321845322598953" green="0.66454506936683577" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="会話を開始">
+                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="startChatButton" destination="cU8-zO-rZ3" id="Oa9-h4-xZP"/>
                         <outlet property="userListTableView" destination="SNu-dT-5wj" id="Xny-TB-YZ4"/>
                     </connections>
                 </viewController>
@@ -98,6 +106,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
